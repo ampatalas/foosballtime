@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>foosball time</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/chooser.css">
+</head>
+<body>
+<div class="container rounded">
+    <div class="row header-row">
+        <a href="/index.html"><h1>foosball time</h1></a>
+    </div>
+    <div class="row input-row">
+        <input id="chooserInput" type="text" class="form-control" aria-label="Put in player." placeholder="Put in player name...">
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="column-header">
+                <h4>😱 Unselected players 😱</h4>
+            </div>
+            <div id="unselectedColumn" class="d-flex flex-column chooser-column rounded">
+            </div>
+        </div>
+        <div class="col button-column">
+            <button type="button" class="btn" id="selectionButton">➡️</button>
+        </div>
+        <div class="col">
+            <div class="column-header">
+                <h4>🎉 Selected players 🎉</h4>
+            </div>
+            <div id="selectedColumn" class="d-flex flex-column chooser-column rounded">
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/chooser.js"></script>
+</body>
+</html>
