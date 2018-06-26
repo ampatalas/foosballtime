@@ -39,7 +39,7 @@ $(function () {
     {
         var generatedHtml = "";
         array.forEach(function (item) {
-            generatedHtml += "<div class=\"p-2 bd-highlight border\">" + item + "</div>";
+            generatedHtml += "<div class=\"entry rounded border\">" + item + "</div>";
         });
         return generatedHtml;
     }
